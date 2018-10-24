@@ -1,0 +1,39 @@
+{
+	"presets": [
+		"react",
+		"es2015",
+		[
+			"env",
+			{
+				"modules": false
+			}
+		],
+		"stage-0"
+	],
+	"plugins": [
+		[
+			"transform-runtime",
+			{
+				"helpers": false,
+				"polyfill": false,
+				"regenerator": true
+			}
+		],
+		"syntax-dynamic-import",
+		[
+			"import-inspector",
+			{
+				"serverSideRequirePath": true
+			}
+		],
+		"transform-object-assign",
+		[
+			"import",
+			{
+				"libraryName": "antd",
+				"libraryDirectory": "lib",
+				"style": "css"
+			}
+		]
+	]
+}
